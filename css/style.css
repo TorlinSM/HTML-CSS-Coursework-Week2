@@ -225,14 +225,23 @@ p {
     padding-top: 20px;    
 }
 
-
+/*++++++++++++++++ Block_end ++++++++++++++++++++++++++*/
 
 
 .line {
-    margin: 30px;
+    margin: 20px;
     border-bottom: 1px solid rgb(120, 122, 122);
     opacity: .2;
 }    
+
+.block__end {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+}
+
 
 /*++++++++++++++++ Social ++++++++++++++++++++++++++*/
 
@@ -259,7 +268,7 @@ p {
     
 }
 
-.socail__icon {
+.social__icon {
     display: block;
     height: 20px;
     fill:rgb(66, 79, 124);
@@ -269,12 +278,31 @@ p {
     background-color: yellow;
 }
 
-.social__item:hover .socail__icon {
+.social__item:hover .social__icon {
     fill: blue;
     transition: fill .2 linear;
     
 }
 
+/*++++++++++++++++ Footer ++++++++++++++++++++++++++*/
+
+.corporation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0 60px 0;
+    opacity: .4;
+}
+
+.footer__logo {
+    margin: 3px;
+    background-color: #fff;
+}
+
+.footer__text {
+    margin-left: 3px;
+    padding-top: 2px;
+}
 
 
 /**
