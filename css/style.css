@@ -29,8 +29,9 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -38,7 +39,8 @@ p {
 
 .header {
     width: 100%;
-    height: 80px;
+    height: 60px;
+    background-color: #fff;
 
     position: absolute;
     top: 0;
@@ -50,8 +52,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border-bottom: 10px solid red;*/
-    padding: 10px 0;
+    
+    padding: 5px 0;
 }
 
 .header__logo {
@@ -65,12 +67,14 @@ p {
 
 .nav {
     display: flex;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
+    border-bottom: 5px solid rgb(25, 172, 127);
+    
 }
 
 .nav_item {
-    margin-left: 20px;
+    margin-left: 25px;
     color: grey;
     text-decoration: none;
     opacity: 0.75;
@@ -101,18 +105,19 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 735px;
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0px;
-    margin-top: 80px;
-    padding-top: 100px;
+    /*margin-top: 60px;*/
+    padding-top: 60px;
     background: rgb(109, 94, 133) 
-    url(img1/first-background.jpg) center;
+    url(img1/first-background.jpg) center no-repeat;
     
 }
 
 .intro__item {
     width: 100%;
-    max-width: 970px;
+    max-width: 1600px;
     margin: 0 auto;
     text-align: center;
 }
@@ -137,8 +142,26 @@ p {
     
 }
 
-.container {
+/*++++++++++++++++ Intro2 ++++++++++++++++++++++++++*/
 
+.intro2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0;
+    margin-top: 60px;
+    padding-top: 0;
+}
+
+.intro2__title {
+    font-size: 35px;
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+    
 }
 
 /*++++++++++++++++ Button ++++++++++++++++++++++++++*/
@@ -167,6 +190,91 @@ p {
 .button--red:hover {
     background-color: rgb(212, 148, 28);
 }
+
+
+/*++++++++++++++++ Icons ++++++++++++++++++++++++++*/
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    
+}
+
+.icons__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.icons__item:hover {
+    opacity: 0;
+    transition: .4s linear;
+}
+
+.icons__pic {
+    margin-bottom: 20px;
+}
+
+.icons__text {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.1;
+    padding-top: 20px;    
+}
+
+
+
+
+.line {
+    margin: 30px;
+    border-bottom: 1px solid rgb(120, 122, 122);
+    opacity: .2;
+}    
+
+/*++++++++++++++++ Social ++++++++++++++++++++++++++*/
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgb(218, 221, 221);
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+    transition: background-color .2s linear;
+    
+}
+
+.socail__icon {
+    display: block;
+    height: 20px;
+    fill:rgb(66, 79, 124);
+}
+
+.social__item:hover {
+    background-color: yellow;
+}
+
+.social__item:hover .socail__icon {
+    fill: blue;
+    transition: fill .2 linear;
+    
+}
+
 
 
 /**
